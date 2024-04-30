@@ -425,6 +425,44 @@ header
         &:hover
             transform: scale(1.025)
 
+//user profile
+
+.userpage
+    display: flex
+    flex-direction: column
+    gap: 50px
+    &-heading
+        width: 100%
+        display: flex
+        gap: 25px
+        align-items: center
+        justify-content: space-between
+        &__maininfo
+            display: flex
+            gap: 25px
+            align-items: center
+            .icon
+                width: 100px
+                height: 100px
+                border-radius: 50%
+                background: pink
+            .text
+                display: flex
+                flex-direction: column
+                gap: 5px
+                &-name
+                    font-size: 28pt
+    .edit
+        background-color: rgba(0, 0, 0, .05)
+        padding: 6px 15px
+        border-radius: 5px
+        font-weight: 600
+        color: rgba(0, 0, 0, .45)
+        i
+            font-size: 9pt
+
+
+
 @for $i from 1 through 10
     .preview:nth-child(#{$i})
         background-color: hsl($i * 50, 30%, 80%)
